@@ -24,7 +24,7 @@ dependencies = [
 xrom-new = "xrom_scripts.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ChecoOnlineDev/xrom-scripts"
+Homepage = "https://github.com/ChecoOnlineDev/xrom-scripts-v2"
 
 [build-system]
 requires = ["hatchling"]

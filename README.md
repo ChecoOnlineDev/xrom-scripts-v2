@@ -7,14 +7,14 @@ Libreria y CLI para conectar scripts Python a servidores remotos via SSH y bases
 ### Repositorio publico
 
 ```bash
-uv pip install git+https://github.com/ChecoOnlineDev/xrom-scripts.git
+uv pip install git+https://github.com/ChecoOnlineDev/xrom-scripts-v2.git
 ```
 
 O como dependencia en tu `pyproject.toml`:
 
 ```toml
 dependencies = [
-    "xrom-scripts @ git+https://github.com/ChecoOnlineDev/xrom-scripts.git",
+    "xrom-scripts @ git+https://github.com/ChecoOnlineDev/xrom-scripts-v2.git",
 ]
 ```
 
@@ -24,7 +24,7 @@ Si el repositorio es privado, usa `git+ssh` para que cada colaborador se autenti
 
 ```toml
 dependencies = [
-    "xrom-scripts @ git+ssh://git@github.com/ChecoOnlineDev/xrom-scripts.git",
+    "xrom-scripts @ git+ssh://git@github.com/ChecoOnlineDev/xrom-scripts-v2.git",
 ]
 ```
 
@@ -296,7 +296,7 @@ Si prefieres un proyecto completo listo para usar:
 
 ```bash
 # Instalar globalmente
-uv tool install git+https://github.com/ChecoOnlineDev/xrom-scripts.git
+uv tool install git+https://github.com/ChecoOnlineDev/xrom-scripts-v2.git
 
 # Crear un nuevo proyecto
 xrom-new mi_script

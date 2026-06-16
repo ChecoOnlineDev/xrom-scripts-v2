@@ -163,7 +163,7 @@ Si debe mantenerse privado, usa `git+ssh` en lugar de `git+https`:
 ```toml
 # pyproject.toml del proyecto generado
 dependencies = [
-    "xrom-scripts @ git+ssh://git@github.com/ChecoOnlineDev/xrom-scripts.git",
+    "xrom-scripts @ git+ssh://git@github.com/ChecoOnlineDev/xrom-scripts-v2.git",
 ]
 ```
 
