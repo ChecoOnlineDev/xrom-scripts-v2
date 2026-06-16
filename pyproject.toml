@@ -1,0 +1,39 @@
+[project]
+name = "xrom-scripts"
+version = "0.1.0"
+description = "CLI interna para generar proyectos Python con conexion SSH + MySQL lista para usar."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Xrom Systems" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "paramiko>=3.0",
+    "pymysql>=1.1",
+]
+
+[project.scripts]
+xrom-new = "xrom_scripts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ChecoOnlineDev/xrom-scripts"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/xrom_scripts"]
+
+[tool.hatch.build]
+include = [
+    "src/xrom_scripts/templates/base/**/*",
+]
